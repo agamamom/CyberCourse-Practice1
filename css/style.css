@@ -1,0 +1,104 @@
+/* GLOBAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #212529;
+    background-color: white;
+    letter-spacing: 1px;
+}
+ul{   
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #ff1083;
+}
+/* HEADER */
+header{
+    background-color: #4d2883;
+    padding: 20px 0;
+}
+.header__content{    
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__content li{
+    /* list-style: none; */
+    display: inline;
+} 
+.header__item a:hover{
+    color: #ff1083;
+}
+.header__item a{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 1rem;
+    letter-spacing: 0.2rem;
+    transition: ease-out .4s;    
+}
+.active a{
+    color: #ff1083;
+}
+.header__content nav{
+    margin-bottom: 2px;
+}
+.header__content p{
+    color: white;
+    font-size: 3.5rem;   
+}
+
+/* CAROUSEL */
+.carousel{
+    background-image: url(../img/image/b3.jpg);
+    background-position: center;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ 
+.carousel__container h1{
+    font-size: 5.6rem;
+    color: white;
+    margin-bottom: 22px;
+}
+.carousel__container p{
+    font-size: 1.7rem;
+    color: white;
+    margin-bottom: 20px;
+}
+.carousel__container button{
+    border-radius: 3px;
+    border: 1px solid white ; 
+    padding: 13px 32px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    transition: ease-out .3s;
+}
+.carousel__container button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid #ff1083;
+}
+
+
