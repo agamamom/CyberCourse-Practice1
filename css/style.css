@@ -111,6 +111,7 @@ header{
 .intro{
     display: grid;
     grid-template-columns: repeat(4,25%);
+    overflow: hidden;
 }
 .intro__ab1{
     grid-column: 2 / 4;
@@ -123,7 +124,7 @@ header{
 }
 .intro__item img{
     display: block;
-    width: 100%;
+    
 }
 .intro__text {
     display: flex;
@@ -282,20 +283,131 @@ header{
     height: 100%;
     background-color: rgba(48, 132, 163, 0.2);
     text-align: right;
-    padding: 38px 28px 0 0;
+    padding: 38px 28px 0 28px;
     color: #fff;
+    cursor: pointer;
 }
 .gallery__item--overlay h3{
-    font-size: 2.5rem;
+    /* position: absolute; */
+    font-size: 3rem;
     font-weight: 700;
-    
+    /* top: 38px;
+    right: 28px; */
+    transform: translateY(20px);
+    transition: all .3s;
+}
+.gallery__item--overlay h3::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    margin-top: 8px;
+    background-color: #fff;
+    transform: translateY(20px);
+    transition: all .5s;
+    opacity: 0;
+}
+.gallery__item--overlay:hover h3{
+    transform: translateX(0);
+}
+.gallery__item--overlay:hover h3::after{
+    transform: translateY(0);
+    opacity: 1;
 }
 .gallery__item--overlay h3 span{
     font-weight: 200;
 }
 .gallery__item--overlay p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     position: absolute;
     right: 28px;
     bottom: 38px;
+    transform: translateY(45px);
+    opacity: 0;
+    transition: all .5s;
+}
+.gallery__item--overlay:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+/* TEAM */
+.team{
+    background-color: #4d2883;
+    padding: 72px 0;
+}
+.team h2{
+    text-align: center;
+    color: white;
+}
+.team__content{
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px 30px; 
+}
+.team__item{
+    position: relative;
+}
+.team__item img{
+    display: block;
+    width: 100%;
+}
+.team__title{
+    position: absolute;   
+    bottom: 0;
+    left: 0;
+    width: 100%;   
+    color: white; 
+    padding: 32px;
+    background-color: #ff0e83; 
+    transition: all .5s;    
+}
+.team__item:hover .team__title{
+    opacity: 0;
+}
+.team__title h3{
+    font-size: 2.2rem;
+    line-height: 34px;
+}
+.team__title p{
+    font-size: 1.4rem;
+}
+.team__details{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 102px 40px;
+    opacity: 0;
+    transition: all .5s;
+}
+.team__item:hover .team__details{
+    opacity: 1;
+}
+.team__details h3{
+    font-size: 2rem;
+    color: #ff0e83;
+}
+.team__details .team__text{
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: white;
+}
+.team__details p{
+    font-size: 1.4rem;
+    color: white;
+    line-height: 28px;
+}
+.team__socials i{
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid rgb(219, 217, 217);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 10px 0 0;
 }
