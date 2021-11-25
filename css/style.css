@@ -25,7 +25,7 @@ button{
     outline: none;
     border: none;
     cursor: pointer;
-    background-color: #ff1083;
+    background-color: hsl(331, 100%, 53%);
 }
 h2{
     font-size: 4.6rem;
@@ -410,4 +410,190 @@ header{
     font-size: 1.5rem;
     text-align: center;
     margin: 20px 10px 0 0;
+    transition: all .4s;
+}
+.team__socials i:hover{
+    color: #ff0e83;
+    border-color: #ff0e83;
+}
+/* FEEDBACK */
+.feedback{
+    background-image: url(../img/image/cc1.jpg);
+    background-size: cover;
+    padding: 70px 0;
+}
+.feedback h2{
+    color: #fff;
+    text-align: center;
+}
+.feedback__content{
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid #ff0e83;
+    padding: 36px;
+    background-color: rgba(240, 248, 255, 0.534);
+}
+.feedback__content .owl-carousel .item{
+    text-align: center;
+    
+}
+.feedback__content .owl-carousel .item p i{
+    margin: 0 17px;
+    color: turquoise;
+    font-size: 2.6rem;
+}
+.feedback__content .owl-carousel .item p{
+    color: rgb(15, 15, 15);
+    font-size: 1.6rem;  
+}
+.feedback__name{
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: white !important;
+    font-size: 1.7rem;
+}
+.owl-theme .owl-dots .owl-dot span{
+    background-color: #585555;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background-color: #000000;
+}
+
+/* CONTACT */
+
+.contact__content form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 70%;
+    margin: 0 auto;
+    gap: 12px 30px;
+    
+}
+.contact__content h2{
+    margin-top: 72px;
+    text-align: center;
+}
+.contact__content form textarea,
+.contact__content form button{
+    grid-column: 1 / 3;
+    padding: 15px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all .4s;
+}
+.contact__content form input{
+    padding: 14px 14px;
+    font-size: 1.5rem;
+    font-weight: 600;   
+    border: 1px solid #000000;
+    border-radius: 4px;
+    transition: all .5s;
+    
+}
+.contact__content form input:focus{
+    box-shadow: 0 0 0 0.3rem #bfdeff;
+}
+.contact__content form input:focus-visible,
+.contact__content form textarea:focus-visible{
+    outline: none;
+}
+.contact__content form textarea::placeholder{
+    color: #000000;
+}
+.contact__content form textarea{
+    resize: none;
+}
+.contact__content form button:hover{
+    background-color: #000000;
+    color: white;
+}
+.contact__map iframe{
+    width: 100%;
+    margin-top: 50px;
+}
+.contact__item{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 90%;
+    margin: 60px auto;
+}
+.contact__address i{
+    font-size: 3rem;
+    color: #4d2883;
+}
+.contact__address p{
+    font-size: 1.4rem;
+    margin-top: 2px;
+    padding: 5px 0; 
+}
+/* FOOTER */
+footer{
+    background-color: #000000;
+    color: white;
+    padding: 50px 0 ;
+}
+.footer__content{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+.footer__part{
+    width: 25%;
+    margin-right: 40px;
+}
+.footer__part h3{
+    font-size: 2.2rem;
+    color: #ff0e83;
+    padding-bottom: 10px;
+}
+.footer__part p{
+    font-size: 1.3rem;
+    padding: 10px 0;
+    line-height: 26px;
+}
+.footer__socials i{
+    font-size: 1.8rem;
+    line-height: 35px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border: 1px solid white;
+    margin: 10px 12px 0 0;
+}
+.footer__part--time{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__part--time {
+    border-bottom: 1px dotted  white;
+}
+.footer__part input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.footer__part input:focus{
+    outline: none;
+}
+.footer__part button{
+    display: block;
+    padding: 11px 15px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 16px 0;
+    transition: all .4s;
+}
+.footer__part button:hover{
+    background-color: white;
+}
+footer .Under-footer{
+    margin-top: 50px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+footer .Under-footer span{
+    color: #ff0e83;
 }

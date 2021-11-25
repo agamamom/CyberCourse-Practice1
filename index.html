@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
     <!-- LIGHTBOX -->
     <link rel="stylesheet" href="./css/lightbox.min.css">
-    <!-- MAIN CSS -->
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- MAIN CSS  -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <!-- HEADER -->
     <header>
-        <div class="header__content"> 
+        <div class="header__content">
             <p>BAKE</p>
             <nav>
                 <ul>
@@ -27,7 +32,7 @@
                     <li class="header__item "><a href="#">GALLERY</a></li>
                     <li class="header__item "><a href="#">CLIENTS</a></li>
                     <li class="header__item "><a href="#">CONTACT</a></li>
-                </ul>           
+                </ul>
             </nav>
         </div>
     </header>
@@ -169,11 +174,11 @@
             </figure>
             <figure class="gallery__item--picture">
                 <a href="./img/image/g4.jpg" data-lightbox="roadtrip"></a>
-                    <img src="./img/image/g4.jpg" alt="gallery g4">              
-                    <figcaption class="gallery__item--overlay">
-                        <h3><span>OUR</span>GALLERY</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </figcaption>
+                <img src="./img/image/g4.jpg" alt="gallery g4">
+                <figcaption class="gallery__item--overlay">
+                    <h3><span>OUR</span>GALLERY</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </figcaption>
                 </a>
             </figure>
             <figure class="gallery__item--picture">
@@ -305,29 +310,140 @@
         </div>
     </section>
     <!-- FEEDBACK -->
-    <section class="feedback">
-
+    <section class="feedback" id="feedback">
+        <h2>TESTIMONIALS</h2>
+        <div class="feedback__content">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <p><i class="fa fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus, quis blanditiis! Similique soluta repellendus recusandae omnis eius! Explicabo,
+                        aliquid recusandae. <i class="fa fa-quote-right"></i></p>
+                    <p class="feedback__name">MARK</p>
+                </div>
+                <div class="item">
+                    <p><i class="fa fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus, quis blanditiis! Similique soluta repellendus recusandae omnis eius! Explicabo,
+                        aliquid recusandae. <i class="fa fa-quote-right"></i></p>
+                    <p class="feedback__name">ALLY</p>
+                </div>
+                <div class="item">
+                    <p><i class="fa fa-quote-left"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus, quis blanditiis! Similique soluta repellendus recusandae omnis eius! Explicabo,
+                        aliquid recusandae. <i class="fa fa-quote-right"></i></p>
+                    <p class="feedback__name">WILLSON</p>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- CONTACT -->
     <section class="contact">
-
+        <div class="contact__content">
+            <h2>CONTACT</h2>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Phone">
+                <textarea cols="30" rows="10" placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="contact__map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.7052580687537!2d106.84567222954848!3d10.90998987102046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174de5d7b82877b%3A0xdbea22864c76f684!2sC%C3%B4ng%20ty%20Ajinomoto%20Vi%E1%BB%87t%20Nam!5e0!3m2!1svi!2s!4v1637808798874!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact__info">
+            <div class="contact__item">
+                <div class="contact__address">
+                    <i class="fas fa-home"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>            
+                <div class="contact__address">
+                    <i class="fas fa-phone"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>           
+                <div class="contact__address">
+                    <i class="fas fa-envelope-open"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- FOOTER -->
     <footer>
-
+        <div class="footer__content">
+            <div class="footer__part">
+                <h3>About US</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus in voluptatibus aliquam porro minus reprehenderit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, dignissimos hic porro quas labore vel?</p>
+                <div class="footer__socials">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            <div class="footer__part">
+                <h3>Working Time</h3>
+                <div class="footer__part--time">
+                    <p>Monday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__part--time">
+                    <p>Tuesday</p>
+                    <p>
+                        9h30 - 18h30
+                    </p>
+                </div>
+                <div class="footer__part--time">
+                    <p>Wednesday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__part--time">
+                    <p>Thurday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__part--time">
+                    <p>Friday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__part--time">
+                    <p>Saturday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__part--time">
+                    <p>Sunday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+            </div>
+            <div class="footer__part">
+                <h3>Twitter Us</h3>
+                <p>ultricies nec, pellentesque eu, pretium quis</p>
+                <p>ultricies nec, pellentesque eu, pretium quis</p>
+                <p>ultricies nec, pellentesque eu, pretium quis</p>
+                <p>ultricies nec, pellentesque eu, pretium quis</p>
+            </div>
+            <div class="footer__part">
+                <h3>Subsribe Us</h3>
+                <input type="text" placeholder="name@example.com">
+                <button type="submit"> Send </button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, deserunt dicta adipisci dignissimos quibusdam mollitia incidunt ut accusamus. Harum, reprehenderit?</p>
+            </div>
+        </div>
+        <p class="Under-footer">© 2020 Lorem ipsum dolor sit amet. | Design by <span>CyberSoft</span></p>
     </footer>
     <!-- JQUERY -->
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous">
-    </script>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+
     <!-- WAYPOINTS CDN -->
-    <script 
-        src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js">
     </script>
-    
+
     <!-- COUNT UP -->
     <script src="./js/jquery.countup.js"></script>
     <script>
@@ -335,6 +451,23 @@
     </script>
     <!-- LIGHTBOX -->
     <script src="./js/lightbox.min.js"></script>
-    
+    <!-- OWL CAROUSEL -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        })
+    </script>
 </body>
+
 </html>
