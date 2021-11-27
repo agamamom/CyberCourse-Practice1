@@ -25,13 +25,13 @@
         <div class="header__content">
             <p>BAKE</p>
             <nav>
-                <ul>
-                    <li class="header__item active"><a href="#">HOME</a></li>
-                    <li class="header__item "><a href="#">ABOUT</a></li>
-                    <li class="header__item "><a href="#">SERVICE</a></li>
-                    <li class="header__item "><a href="#">GALLERY</a></li>
-                    <li class="header__item "><a href="#">CLIENTS</a></li>
-                    <li class="header__item "><a href="#">CONTACT</a></li>
+                <ul id="mainNav">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#services">SERVICE</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#intro">ABOUT</a></li>
+                    <li><a href="#client">CLIENTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,7 +45,7 @@
         </div>
     </section>
     <!-- INTRO -->
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="intro__item intro__text">
             <div>
                 <h3>Tradition</h3>
@@ -142,7 +142,7 @@
         </div>
     </section>
     <!-- GALLERY -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h2>OUR GALLERY</h2>
         <div class="gallery__item">
             <figure class="gallery__item--picture gallery-g1">
@@ -202,7 +202,7 @@
         </div>
     </section>
     <!-- TEAM -->
-    <section class="team">
+    <section class="team" id="client">
         <h2>BAKE TEAM</h2>
         <div class="team__content">
             <div class="team__item">
@@ -222,7 +222,7 @@
                     </div>
                 </div>
             </div>
-            <div class="team__item">
+            <div class="team__item team__item2">
                 <img src="./img/image/t2.jpg" alt="team 2">
                 <div class="team__title">
                     <h3>John Simon</h3>
@@ -336,7 +336,7 @@
         </div>
     </section>
     <!-- CONTACT -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact__content">
             <h2>CONTACT</h2>
             <form action="">
@@ -435,6 +435,10 @@
         </div>
         <p class="Under-footer">© 2020 Lorem ipsum dolor sit amet. | Design by <span>CyberSoft</span></p>
     </footer>
+    <!-- BACK TO TOP -->
+    <div class="backtotop cd-top text-replace js-cd-top">
+            <i class="fas fa-chevron-up"></i>    
+    </div>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
@@ -468,6 +472,20 @@
             }
         })
     </script>
-</body>
+    <!-- BACK TO TOP -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main-BackToTop.js"></script>
+    <!-- ACTIVE NAVIGATION BAR -->
+    <script>
+        var mainNav = document.getElementById("mainNav");
+        var listNav = mainNav.getElementsByTagName("li");
+        for(i =0; i<=listNav.length; i++){
+            listNav[i].addEventListener("click",function(){
+                var currentActive = document.querySelector("#mainNav .active");
+                currentActive.className=currentActive.className.replace("active","");
+                this.className += "active";
+            });
+        }
+    </script>
 
-</html>
+</body> 

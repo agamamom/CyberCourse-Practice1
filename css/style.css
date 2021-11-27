@@ -38,6 +38,9 @@ h2{
 header{
     background-color: #4d2883;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 .header__content{    
     width: 60%;
@@ -50,10 +53,10 @@ header{
     /* list-style: none; */
     display: inline;
 } 
-.header__item a:hover{
+.header__content a:hover{
     color: #ff1083;
 }
-.header__item a{
+.header__content a{
     color: white;
     font-size: 1.2rem;
     font-weight: 700;
@@ -61,7 +64,7 @@ header{
     letter-spacing: 0.2rem;
     transition: ease-out .4s;    
 }
-.active a{
+.header__content ul .active a{
     color: #ff1083;
 }
 .header__content nav{
@@ -416,6 +419,34 @@ header{
     color: #ff0e83;
     border-color: #ff0e83;
 }
+.team__item2{
+    overflow: hidden;
+}
+.team__item2 .team__details{  
+    transform: translateX(-100%);
+}
+.team__item2:hover .team__details{
+    transform: translate(0);   
+}
+.team__item3{
+    overflow: hidden;
+}
+.team__item3 .team__details{  
+    transform: translateY(-100%);
+}
+.team__item3:hover .team__details{
+    transform: translate(0);   
+}
+.team__item4:hover .team__details{
+    transform: rotate(360deg);
+}
+.team__item5 .team__details{
+    transform: scale(0);
+}
+.team__item5:hover .team__details{
+    transform: scale(1);
+}
+
 /* FEEDBACK */
 .feedback{
     background-image: url(../img/image/cc1.jpg);
@@ -597,3 +628,23 @@ footer .Under-footer{
 footer .Under-footer span{
     color: #ff0e83;
 }
+/* BACK TO TOP */
+.backtotop{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    visibility: hidden;
+    opacity: 1;
+}
+.backtotop i{
+    border: 2px solid #4c6ef5;
+    padding: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #4c6ef5;
+}
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
